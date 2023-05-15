@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleglobal.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        var prevCardExpanded;
+        var cardExpand = (e)=>{
+            
+            if(e == prevCardExpanded){ 
+                prevCardExpanded.classList.remove("ativo");
+                prevCardExpanded = null;
+                return;
+            }else if(prevCardExpanded){ 
+                prevCardExpanded.classList.remove("ativo")
+                prevCardExpanded = null
+            }
+           e.classList.toggle('ativo');
+           prevCardExpanded = e;
+        }
+
+    </script>
+</head>
+<body>
+    <header> 
+        <p class="nameHeader">RUAN SOUSA</p>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/aspiracoes/index.html">Aspirações</a>
+            <a href="/habilidades/index.html">Habilidades</a>
+            <a href="/projetos/index.html">Projetos</a>
+        </nav>
+    </header>
+    <div class="div-main">
+        <div class="minhas-habilidades">
+            <h1>Minhas habilidades</h1>
+            <div class="hab-content">
+                <div onClick="cardExpand(this)" class="card" id="card1">
+                    <div class="hab-icon" id="icon-html"><p>HTML</p></div>
+                    <span>
+                        <p class="hab-title">HTML 5</p>
+                        <p class="hab-desc">Uma das linguagens que possuo mais prática,
+                            sendo utilizada na maior parte de meus projetos.
+                        </p>
+                    </span>
+                </div>
+                <div onClick="cardExpand(this)" class="card" id="card2">
+                    <div class="hab-icon" id="icon-css"><p>CSS</p></div>
+                    <span>
+                        <p class="hab-title">CSS 3</p>
+                        <p class="hab-desc">Assim como o HTML, o CSS é uma linguagem na qual possuo
+                            muita prática e também utilizo na maioria de meus projetos.
+                        </p>
+                    </span>
+                </div>
+                <div onClick="cardExpand(this)" class="card" id="card3">
+                    <div class="hab-icon" id="icon-js"><p>JAVASCRIPT</p></div>
+                    <span>
+                        <p class="hab-title">JAVASCRIPT</p>
+                        <p class="hab-desc">A linguagem que mais domino, sendo a qual tenho mais prática e que mais utilizo.
+                            reconheço como um linguagem simples de aprender e multifuncional.
+                        </p>
+                    </span>
+                </div>
+                <div onClick="cardExpand(this)" class="card" id="card4">
+                    <div class="hab-icon" id="icon-java"><p>JAVA</p></div>
+                    <span>
+                        <p class="hab-title">JAVA</p>
+                        <p class="hab-desc">Linguagem que me introduziu ao universo da programação e
+                            desenvolveu muito minha lógica.
+                    </span>
+                </div>
+                <div onClick="cardExpand(this)" class="card" id="card5">
+                    <div class="hab-icon" id="icon-react"><p>REACT</p></div>
+                    <span>
+                        <p class="hab-title">React</p>
+                        <p class="hab-desc">
+                            Minha primeira experiência com framework, sendo o que possuo mais confiança
+                            para trabalhar.
+                        </p>
+                    </span>
+                </div>
+                <div onClick="cardExpand(this)" class="card" id="card6">
+                    <div class="hab-icon" id="icon-spring"><p>SPRING</p></div>
+                    <span>
+                        <p class="hab-title">Spring Boot</p>
+                        <p class="hab-desc">Framework que mais me esforço para entender nos tempos recentes, considero
+                            seu aprendizado como um passo importante para minha carreira
+                        </p>
+                    </span>
+                </div>
+                <div onClick="cardExpand(this)" class="card" id="card7">
+                    <div class="hab-icon" id="icon-fb"><p>FIREBASE</p></div>
+                    <span>
+                        <p class="hab-title">Firebase</p>
+                        <p class="hab-desc">Ferramenta gratuita que facilitou bastante meu aprendizado na área de programação</p>
+                    </span>
+                </div>
+                
+                <div onClick="cardExpand(this)" class="card" id="card8">
+                    <div class="hab-icon" id="icon-git"><p>GITHUB</p></div>
+                    <span>
+                        <p class="hab-title">github</p>
+                        <p class="hab-desc">Indispensável para qualquer profissional da área e ainda mais importante
+                            para gerenciar tarefas em grupo.
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a class="icon" id="wpp" href="https://api.whatsapp.com/send?phone=5585986458173"></a>
+        <a class="icon" id="git" href="https://github.com/ruansousa25"></a>
+    </footer>
+</body>
+</html>
