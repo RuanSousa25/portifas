@@ -5,6 +5,7 @@
     color: #FFF;
 }
 body{
+    inset: 0 0 0 0;
     margin: 0;
     padding: 0;
     background-color: rgb(0, 2, 17);
@@ -14,16 +15,15 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
     background-size: cover;
     min-width: 100%;
     background-repeat: no-repeat;
     text-align: center;
 }
 header{
+    position: absolute;
     height: 50px;
-    width: 100%;
+    width: 100%; 
     background-color: rgb(0, 3, 22);
     display: flex;
     justify-content: space-around;
@@ -71,9 +71,11 @@ nav a:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
     background-color: rgba(0, 0, 0,0);
     flex-grow: 1;
-    width: 100%;
+    margin: 0;
+    margin-top: 50px;
 }
 
 @media (max-width: 480px){
