@@ -20,7 +20,6 @@ body{
     min-width: 100%;
     background-repeat: no-repeat;
     text-align: center;
-    overflow-x: hidden;
 }
 header{
     height: 50px;
