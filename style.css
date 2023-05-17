@@ -3,6 +3,7 @@
 
 .div-main{
     flex-wrap: wrap-reverse;
+    flex-grow: 1;
 }
 .content > h1{
     font-weight: 100;
