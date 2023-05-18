@@ -3,7 +3,7 @@
 
 .div-main{
     flex-wrap: wrap-reverse;
-    flex-grow: 1;
+   
 }
 .content > h1{
     font-weight: 100;
@@ -108,14 +108,17 @@
     align-items: center;
 }
 #projeto02:hover{
+   
     background: repeating-linear-gradient(
-    138deg,
+    141deg,
     #000,
     #000 10px,
     #FFE13A 10px,
     #FFE13A 20px
     );
-    animation: movingBG 5s linear infinite;
+
+    background-size: contain;
+    animation: movingBG 5s reverse ease-in-out  infinite;
 }
 #projeto02:hover p{
     color: white;
@@ -190,6 +193,9 @@ footer{
 }
 @keyframes movingBG{
     0%{
-        background-position: 12em;
+        background-position: 12.1em 12.1em;
+    }
+    100%{
+        background-position: 0em 0em;
     }
 }

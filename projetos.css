@@ -24,14 +24,14 @@
     border: 1px solid #c9c9c9;
     padding-bottom: 10px;
     background-color: #000035;
-
-
+    animation: to-up 1s linear;
 }
 .cardProj p{
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 20px;
     height: 25px;
+ 
     
 }
 .imgProj{
