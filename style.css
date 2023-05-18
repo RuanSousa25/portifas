@@ -134,7 +134,7 @@
     width: 400px;
 }
 .img{
-    background-image: url("/img/fotoruan.jpg");
+    background-image: url("img/fotoruan.jpg");
     height: 350px;
     width: 350px;
     background-size: contain;
