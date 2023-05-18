@@ -102,6 +102,30 @@
 #projeto01:hover span{
     display: none;
 }
+#projeto02{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#projeto02:hover{
+    background: repeating-linear-gradient(
+    138deg,
+    #000,
+    #000 10px,
+    #FFE13A 10px,
+    #FFE13A 20px
+    );
+    animation: movingBG 5s linear infinite;
+}
+#projeto02:hover p{
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+#projeto02 p{
+    color: black;
+}
+
 .img-size{
     display: flex;
     justify-content: center;
@@ -110,14 +134,13 @@
     width: 400px;
 }
 .img{
-    background-image: url(./img/fotoruan.jpg);
+    background-image: url("/img/fotoruan.jpg");
     height: 350px;
     width: 350px;
     background-size: contain;
     border-radius: 50%;
     background-repeat: no-repeat;
     animation: linear sizing 1s;
-
 }
 
 .bg{
@@ -164,5 +187,9 @@ footer{
 }
 #git:hover{   
     background-position: 14px 4px;
-
+}
+@keyframes movingBG{
+    0%{
+        background-position: 12em;
+    }
 }
