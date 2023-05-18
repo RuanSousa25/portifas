@@ -95,28 +95,28 @@
 }
 
 #icon-html{
-    background-image: url("../img/htmlicon.png");
+    background-image: url("img/htmlicon.png");
 }
 #icon-css{
-    background-image: url("../img/cssicon.png");
+    background-image: url("img/cssicon.png");
 }
 #icon-js{
-    background-image: url("../img/javascripticon.png");
+    background-image: url("img/javascripticon.png");
 }
 #icon-java{
-    background-image: url("../img/javaicon.png");
+    background-image: url("img/javaicon.png");
 }
 #icon-react{
-    background-image: url("../img/reacticon.png");
+    background-image: url("img/reacticon.png");
 }
 #icon-spring{
-    background-image: url("../img/spring.png");
+    background-image: url("img/spring.png");
 }
 #icon-fb{
-    background-image: url("../img/firebase.png");
+    background-image: url("img/firebase.png");
 }
 #icon-git{
-    background-image: url("../img/githubicon.png");
+    background-image: url("img/githubicon.png");
 }
 @media (max-width: 700px) {
     .card{
