@@ -1,5 +1,6 @@
 
 .title{
+    margin-top: 50px;
     width: 100%;
     animation: linear to-right 1s;
 }
