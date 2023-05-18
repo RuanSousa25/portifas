@@ -44,13 +44,13 @@
     background-repeat: no-repeat;
 }
 #miniblog .imgProj{
-    background-image: url("../img/projeto01.PNG");
+    background-image: url("img/projeto01.PNG");
 }
 #swplanets .imgProj{
-    background-image: url("../img/projetosw.PNG");
+    background-image: url("img/projetosw.PNG");
 }
 #syscad .imgProj{
-    background-image: url("../img/projetosyscad.PNG");
+    background-image: url("img/projetosyscad.PNG");
 }
 .textProj{
     flex-grow: 1;
@@ -79,14 +79,14 @@
     margin-left: .3em;
 }
 .cssicon{
-    background: url("../img/cssicon.png");
+    background: url("img/cssicon.png");
     height: 100%;
     width: 25px;
     background-size: contain;
     background-position: center;
 }
 .reacticon{
-    background: url("../img/reacticon.png");
+    background: url("img/reacticon.png");
     height: 100%;
     width: 25px;
     background-size: contain;
@@ -94,7 +94,7 @@
 
 }
 .jsicon{
-    background-image: url("../img/javascripticon.png");
+    background-image: url("img/javascripticon.png");
     height: 100%;
     width: 25px;
     background-size: contain;
@@ -102,14 +102,14 @@
     background-repeat: no-repeat    ;
 }
 .htmlicon{
-    background-image: url("../img/htmlicon.png");
+    background-image: url("img/htmlicon.png");
     height: 100%;
     width: 25px;
     background-size: contain;
     background-position: center;
 }
 .firebaseicon{
-    background-image: url("../img/firebase.png");
+    background-image: url("img/firebase.png");
     height: 100%;
     width: 25px;
     background-size: contain;
@@ -117,14 +117,14 @@
 }
 
 .phpicon{
-    background-image: url("../img/phpicon.png");
+    background-image: url("img/phpicon.png");
     height: 100%;
     width: 25px;
     background-size: contain;
     background-position: center;
 }
 .mysqlicon{
-    background-image: url("../img/mysql.png");
+    background-image: url("img/mysql.png");
     height: 100%;
     width: 25px;
     background-size: contain;
