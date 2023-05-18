@@ -118,6 +118,9 @@
 #icon-git{
     background-image: url("img/githubicon.png");
 }
+#icon-php{
+    background-image: url("img/phpicon.png");
+}
 @media (max-width: 700px) {
     .card{
         flex-basis: 100%;
