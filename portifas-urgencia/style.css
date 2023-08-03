@@ -1,0 +1,236 @@
+/* estilo da home */
+
+
+.div-main{
+    flex-wrap: wrap-reverse;
+   
+}
+.content > h1{
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 60px;
+    margin: 0;
+    animation: linear to-down 1s;
+    cursor: default;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 50px;
+}
+.content p{
+    font-size: 20px;
+    color: #bbbbbb;
+    margin: 0;
+    animation: linear to-right 1s ;
+}
+.projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1em;
+}
+.projeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 12em;
+    height: 8em;
+    background-color: transparent;
+    cursor: pointer;
+    animation: linear to-up 1s ;
+}
+.projeto p{
+    animation: none;
+
+    
+}
+.projeto-content{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 90%;
+    background-color: #f6fcff;
+    transition: .3s
+}
+.projeto:hover .projeto-content{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#projeto01 p{
+    color: black;
+    padding-left: 5px;
+    cursor: pointer;
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 30px;
+    border-bottom: 1px solid #CCC;
+    box-shadow: 2px 1px 3px 2px rgba(0, 0, 0,0.2);
+}
+#projeto01 h2{
+    display: none;
+
+}
+#projeto01:hover h2{
+    display: block;
+    position: relative;
+    font-size: medium;
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+}
+#projeto01 span{
+    display: block;
+    position: relative;
+    top: 20%;
+    font-size: medium;
+    color: black;
+    font-weight: 500;
+}
+#projeto01:hover span{
+    display: none;
+}
+/* #projeto02{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#projeto02:hover{
+   
+    background: repeating-linear-gradient(
+    141deg,
+    #000,
+    #000 10px,
+    #FFE13A 10px,
+    #FFE13A 20px
+    );
+
+    background-size: contain;
+    animation: movingBG 5s reverse ease-in-out  infinite;
+}
+#projeto02:hover p{
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+#projeto02 p{
+    color: black;
+} */
+#projeto02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projeto02 h2{
+    display: none;
+    color: black;
+    font-weight: 500;
+}
+#projeto02 p{
+    text-align: left;
+    font-size: medium;
+    color: black;
+
+}
+#projeto02:hover p{
+    display: none;
+}
+#projeto02:hover h2{
+    display: block;
+}
+#projeto02 b.numb{
+    color: #a11;
+    font-weight: 200;
+}
+#projeto02 b.string{
+    color: #390;
+    font-weight: 200;
+}
+#projeto02 b.brackets{
+    color: #999;
+    font-weight: 200
+}
+
+.img-size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+}
+.img{
+    background-image: url("img/fotoruan.jpg");
+    height: 350px;
+    width: 350px;
+    background-size: contain;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    animation: linear sizing 1s;
+}
+
+.bg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 2;
+}
+footer{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    height: 65px;
+    width: 60px;
+    cursor: pointer;
+    transition: .5s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#wpp{
+    background: url("./img/whatsap2.png");
+    background-size:60px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#wpp:hover{
+   background-position: 0px -10px;
+}
+#git{
+    background: url("./img//githubicon.png");
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#git:hover{   
+    background-position: 14px 4px;
+}
+@keyframes movingBG{
+    0%{
+        background-position: 12.1em 12.1em;
+    }
+    100%{
+        background-position: 0em 0em;
+    }
+}
