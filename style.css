@@ -3,6 +3,7 @@
 
 .div-main{
     flex-wrap: wrap-reverse;
+   
 }
 .content > h1{
     font-weight: 100;
@@ -101,6 +102,68 @@
 #projeto01:hover span{
     display: none;
 }
+/* #projeto02{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#projeto02:hover{
+   
+    background: repeating-linear-gradient(
+    141deg,
+    #000,
+    #000 10px,
+    #FFE13A 10px,
+    #FFE13A 20px
+    );
+
+    background-size: contain;
+    animation: movingBG 5s reverse ease-in-out  infinite;
+}
+#projeto02:hover p{
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+#projeto02 p{
+    color: black;
+} */
+#projeto02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projeto02 h2{
+    display: none;
+    color: black;
+    font-weight: 500;
+}
+#projeto02 p{
+    text-align: left;
+    font-size: medium;
+    color: black;
+
+}
+#projeto02:hover p{
+    display: none;
+}
+#projeto02:hover h2{
+    display: block;
+}
+#projeto02 b.numb{
+    color: #a11;
+    font-weight: 200;
+}
+#projeto02 b.string{
+    color: #390;
+    font-weight: 200;
+}
+#projeto02 b.brackets{
+    color: #999;
+    font-weight: 200
+}
+
 .img-size{
     display: flex;
     justify-content: center;
@@ -109,14 +172,13 @@
     width: 400px;
 }
 .img{
-    background-image: url(./img/fotoruan.jpg);
+    background-image: url("img/fotoruan.jpg");
     height: 350px;
     width: 350px;
     background-size: contain;
     border-radius: 50%;
     background-repeat: no-repeat;
     animation: linear sizing 1s;
-
 }
 
 .bg{
@@ -163,5 +225,12 @@ footer{
 }
 #git:hover{   
     background-position: 14px 4px;
-
+}
+@keyframes movingBG{
+    0%{
+        background-position: 12.1em 12.1em;
+    }
+    100%{
+        background-position: 0em 0em;
+    }
 }

@@ -1,0 +1,146 @@
+.minhas-habilidades{
+    width: 60em;
+    background-color: rgb(0, 3, 22);
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+.minhas-habilidades h1{
+    font-size: 2em;
+    width: 100%;
+}
+.hab-content{
+    background-color: #030303;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-top: 3em;
+    padding-bottom: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 23%;
+    height: 130px;
+    min-width: 200px;
+    cursor: pointer;
+    gap: 20px;
+}
+.card *{
+    pointer-events: none;
+}
+.card span{
+    display: none;
+}
+@media (min-width: 701px) {
+    .ativo{
+        order: -1;
+        flex-basis: 100%;
+        margin-bottom: 1em;
+        gap: 0;
+    }
+    .ativo .hab-icon p{
+        display: none;
+        border-bottom: 1px solid #ccc;
+    
+    }
+    .card.ativo span .hab-desc{
+        font-size: 15px;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0;
+        margin-top: .5em;
+    }
+    .card.ativo span{
+        display: block;
+         max-width: 250px;
+         height: 100%;
+        border-bottom: 1px solid #ccc;
+        padding-left: 50px;
+        padding-bottom: 10px;
+
+    }
+    .ativo .hab-icon{
+        height: 100%;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+}
+.hab-title{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.hab-icon{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hab-icon p{
+    position: relative;
+    bottom: -75px;
+    pointer-events: none;
+}
+
+#icon-html{
+    background-image: url("img/htmlicon.png");
+}
+#icon-css{
+    background-image: url("img/cssicon.png");
+}
+#icon-js{
+    background-image: url("img/javascripticon.png");
+}
+#icon-java{
+    background-image: url("img/javaicon.png");
+}
+#icon-react{
+    background-image: url("img/reacticon.png");
+}
+#icon-spring{
+    background-image: url("img/spring.png");
+}
+#icon-fb{
+    background-image: url("img/firebase.png");
+}
+#icon-git{
+    background-image: url("img/githubicon.png");
+}
+#icon-php{
+    background-image: url("img/phpicon.png");
+}
+#icon-mysqli{
+    background-image: url("img/mysql.png");
+}
+@media (max-width: 700px) {
+    .card{
+        flex-basis: 100%;
+    }
+    .card span .hab-desc{
+        font-size: 15px;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0;
+        margin-top: .5em;
+    }
+    .card span{
+        display: block;
+         max-width: 250px;
+    }
+    .hab-content{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
